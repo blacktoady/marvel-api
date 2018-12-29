@@ -21,7 +21,6 @@ export default class App extends React.Component {
 
       <div className='container'>
 
-        <center>
         {current.map(data => 
             <div className={"hero" + data.id}> 
               <h2>{data.name}</h2>
@@ -29,7 +28,6 @@ export default class App extends React.Component {
             </div>   
           )}
         {console.log(current)} 
-        </center>
 
       </div>
     )

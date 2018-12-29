@@ -205,23 +205,19 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'container' },
-        _react2.default.createElement(
-          'center',
-          null,
-          current.map(function (data) {
-            return _react2.default.createElement(
-              'div',
-              { className: "hero" + data.id },
-              _react2.default.createElement(
-                'h2',
-                null,
-                data.name
-              ),
-              _react2.default.createElement('img', { src: data.thumbnail.path + "." + data.thumbnail.extension })
-            );
-          }),
-          console.log(current)
-        )
+        current.map(function (data) {
+          return _react2.default.createElement(
+            'div',
+            { className: "hero" + data.id },
+            _react2.default.createElement(
+              'h2',
+              null,
+              data.name
+            ),
+            _react2.default.createElement('img', { src: data.thumbnail.path + "." + data.thumbnail.extension })
+          );
+        }),
+        console.log(current)
       );
     }
   }]);
